@@ -116,8 +116,25 @@ h5{
 	border: 2px solid #9cf;
 }
 
+.projects{
+	display: flex;
+	flex-direction: column;
+	border: 2px solid black;
+	margin: 0 auto;
+	list-style: none;
+}
+
 .projects li{
+	width: 250px;
+	height: 250px;
+	padding: 10px;
+}
+
+.prev{
 	display: block;
+	float: left;
+	/*margin-left: 50px;*/
+	margin-right: 50px;
 }
 
 
@@ -280,6 +297,7 @@ h5{
 	}
 
 	.projects{
+		width: 800px;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
