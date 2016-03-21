@@ -1,0 +1,101 @@
+//variables
+$spacing: 10px;
+//colors
+$menu: #292f26;
+$option: #2c241a;
+$brown: #60523a;
+// ^ rename these ^
+
+//mixins
+@mixin clearFix{
+	&:after{
+		content: '';
+        display: table;
+        clear: both;
+	
+	}
+}
+
+body{
+	margin: 0;
+}
+
+.topPart{
+	width: 100%;
+	height: 500px;
+	padding: 20px;
+	background: yellow;
+  	background-image: url(../images/small-MHpattern.jpg); 
+
+}
+
+.Text{
+	display: block;
+	margin: 0 auto;
+	padding: 15px;
+	width: 80%;
+	line-height: 1.2;
+	font-size: 1.2rem;
+	font-family: Arial, Helvetica, sans-sarif;
+	background: rgba(255, 255, 255, 0.7);
+	@include clearFix;
+	
+}
+.topPic{
+	float: left;
+	width: 150px;
+
+}
+
+.midPart{
+	width: 100%;
+	height: 700px;
+	padding: 20px;
+	background: tomato; 
+	background-image: url(../images/Tigrex.jpg);
+	background-position: top right;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.midPic{
+	width: 200px;
+	float: right;
+}
+
+.botPart{
+	width: 100%;
+	height: 500px;
+	padding: 20px;
+	background: #000;
+	background-image: url(../images/MegaMan.jpg) 
+}
+
+@media(min-width: 760px){
+	.topPart{
+		background-image: url(../images/MHpattern.jpg); 
+		background-position: top left;
+		background-attachment: fixed;
+	}
+	.topPic{
+		display: block;
+	}
+	.midPart{
+		background-attachment: fixed;
+		height: 650px;
+	}
+	.midPic{
+		width: 400px;
+	}
+
+	.botPart{
+		background-repeat:no-repeat;
+
+		background-position: bottom center;
+		background-attachment: fixed;	
+	}
+}
+
+@media(min-width: 1000px){
+
+}

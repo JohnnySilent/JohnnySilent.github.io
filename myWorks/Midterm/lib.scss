@@ -1,0 +1,17 @@
+//variables
+$spacing: 10px;
+//colors
+$menu: #292f26;
+$option: #2c241a;
+$brown: #60523a;
+// ^ rename these ^
+
+//mixins
+@mixin clearFix{
+	&:after{
+		content: '';
+        display: table;
+        clear: both;
+	
+	}
+}

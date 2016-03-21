@@ -1,0 +1,64 @@
+/*
+  Grid System
+*/
+
+/* Shared & Small */
+
+
+.container {
+  max-width: 1000px;
+}
+
+
+.row {
+  clear: both;
+  display: block;
+  width: 100%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.column {
+  padding: 20px;
+  box-sizing: border-box;
+  display: block;
+  float: left;
+  width: 100%;
+}
+.column.half {
+  width: 50%;
+ 
+}
+
+.column.third {
+  width: 33.3333333%;
+}
+
+.column.fourth {
+  width: 25%;
+}
+
+
+@media (min-width: 641px) { /* Medium up */
+  .column {
+    padding: 30px;
+  }
+}
+
+@media (min-width: 1025px) { /* Large up */
+  .column {
+    padding: 40px;
+  }
+}
+
+@media (min-width: 1441px) { /* X-Large up */
+
+}
+
+@media (min-width: 1921px) { /* XX-Large up */
+
+}

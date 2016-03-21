@@ -1,0 +1,130 @@
+html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }
+
+html, body{
+	height: 100%;
+	margin: 0;
+}
+
+.clearfix{
+	clear: both;
+	display: table;
+	content: '';
+}
+
+
+
+
+
+header{
+	width: 100%;
+	height: 30px;
+	background: #7cf;
+}
+
+.wrapper{
+	margin: 0 auto;
+	width: 90%;
+	background: azure;
+
+}
+
+.time{
+	margin: 0 auto;
+	display: block;
+	width: 500px;
+	background: #bcf;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+#clock{
+	font-size: 5rem;
+	margin: 0;
+}
+
+.week{
+	display: flex;
+	width: 100%;
+	margin-top: 85px;
+	margin-bottom: 10px; 
+	height: 150px;
+	background: #bcf;
+}
+
+
+.info h2{
+	text-align: center;
+	padding-bottom: 6px;
+	border-bottom: 1px solid black;
+	color: blue;
+}
+
+.info{
+	margin: 0 auto;
+	padding: 10px;
+	width: 80%;
+	background: #bcf;
+}
+
+.event{
+	margin-bottom: 10px;
+	font-size: 1.8rem;
+	text-align: center;
+	list-style: none;
+}
+
+.add{
+	margin: 0 auto;
+	padding: 6px;
+	height: 30px;
+	width: 100px;
+	background: #dcf;
+	font-size: .8rem;
+	border-radius: 10px;
+	border: solid 1px #9cf;
+	text-align: center;
+}
+
+.add:hover{
+	background: orange;
+}
+
+.weekday{
+	background: #fff;
+	width: 50%;
+	border: 1px solid black;
+}
+
+.Hours{
+	display: flex;
+	width: 100%;
+	height: 150px;
+	background: #fff;
+	border: 1px solid black;
+	margin-top: 10px;
+	margin-bottom: 10px; 
+}
+
+.sections{
+	border-right: 1px solid silver;
+	width: 100%;
+	color: silver;
+	font-size: .8rem;
+}
+
+.sections:nth-child(4),
+.sections:nth-child(5),
+.sections:nth-child(6)
+{
+	background: grey;
+}
+
+h1{
+	text-align: center;
+}
+
+@media(min-width: 760px){
+
+}
+

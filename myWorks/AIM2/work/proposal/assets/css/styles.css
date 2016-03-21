@@ -1,0 +1,75 @@
+/*
+  primary #39D1E5
+  dark    #083439
+  medium  #5D6B6D
+  lighter #D4DEDE
+  light   #f2f5f5
+*/
+
+/* Type */
+h1,
+h2,
+h3 {
+  color: #083439;
+  font-weight: normal;
+  font-size: 16px;
+}
+h1 {
+  margin-bottom: 0;
+}
+h2 {
+  color: #fff;
+  margin-top: 0;
+  font-size: 30px;
+}
+h3 {
+  font-weight: bold;
+}
+p,
+ul,
+ol {
+
+}
+p,
+li {
+  color: #5D6B6D;
+}
+a,
+a:link {
+  color: #39D1E5;
+}
+a:focus {}
+a:hover {
+  color: #20BACE;
+}
+a:active {}
+a:visited {}
+
+/* structure */
+body {
+  text-align: center;
+}
+.container {
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Modules */
+header,
+article,
+footer {
+  padding: 2em;
+}
+header {
+  background-color: #39D1E5;
+}
+footer {
+  border-top: solid 1px #D4DEDE;
+}
+
+/* Components */
+ul {
+  list-style: none;
+  padding: 0;
+}

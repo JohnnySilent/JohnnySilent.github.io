@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body onload="startTime()">
+	<header>
+		<div class="logo">
+			Chrono
+		</div>
+	</header>
+	<div class="wrapper" >
+		
+		<a class="time" href="index.html">
+			<h5>Day, Month, Year</h5>
+			<!-- <p>00:00:00</p> -->
+			<div id="clockSmall"></div>
+		</a>
+	<h1><a class="arrow-left" href="day3.html"></a>Wednesday<a class="arrow-right" href="day5.html"></a></h1>
+		<div class="Hours">
+			<div class="sections">12 am</div>
+			<div class="sections">1 am</div>
+			<div class="sections">2 am</div>
+			<div class="sections">3 am</div>
+			<div class="sections">4 am</div>
+			<div class="sections">5 am</div>
+			<div class="sections">6 am</div>
+			<div class="sections">7 am</div>
+			<div class="sections">8 am</div>
+			<div class="sections">9 am</div>
+			<div class="sections">10 am</div>
+			<div class="sections">11 am</div>
+			<div class="sections">12 pm</div>
+			<div class="sections">1 pm</div>
+			<div class="sections">2 pm</div>
+			<div class="sections">3 pm</div>
+			<div class="sections">4 pm</div>
+			<div class="sections">5 pm</div>
+			<div class="sections">6 pm</div>
+			<div class="sections">7 pm</div>
+			<div class="sections">8 pm</div>
+			<div class="sections">9 pm</div>
+			<div class="sections">10 pm</div>
+			<div class="sections">11 pm</div>
+		</div>		
+
+		<div class="tracker"></div>
+
+		<div class="clearfix info">
+			<h2>
+				Upcoming Events
+			</h2>
+			<li class="event"><span>Event 1</span></li>
+			<li class="event"><span>Event 2</span></li>
+			<li class="event"><span>Event 3</span></li>
+			<a href="#" class="add" data-toggle-class="open" data-toggle-element="addEvent">Add New Event</a>
+		</div>
+
+		<div class="addEvent">
+			<div class="fom">
+			<h2>Create a new event</h2>
+			<br>
+				<form>
+					Title<br>
+					<input type="text" name="title">
+					Starting Time
+					<input type="text" name="beginTime">
+					Ending Time
+					<input type="text" name="endTime">
+					Description<br>
+					<input type="textarea" name ="desc"><br>
+					<button class="done" data-toggle-class="open" data-toggle-element="addEvent">Done?</button>
+				</form>
+			</div>
+		</div>
+		<div><a href="index.html">back</a></div>
+	</div>
+	<script src="js/jquery.js"></script>
+		<script src="js/toggle.js"></script>
+		<script>
+
+		function startTime() {
+		    var today = new Date();
+		    var h = today.getHours();
+		    var m = today.getMinutes();
+		    var s = today.getSeconds();
+		    var AMPM = "";
+		    h = rightTime(h);
+		    m = checkTime(m);
+		    s = checkTime(s);
+
+		    document.getElementById('clockSmall').innerHTML =
+		    h + ":" + m + ":" + s + " PM";
+		    var t = setTimeout(startTime, 500);
+		}
+		function checkTime(i) {
+		    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+		    return i;
+
+		}
+		function rightTime(j) {
+			if (j > 12) {j = j - 12};
+		    return j;
+		}
+		</script>
+</body>
+</html>

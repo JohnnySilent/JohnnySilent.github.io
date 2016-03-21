@@ -1,0 +1,55 @@
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+
+
+.mainn{
+	perspective: 1px;
+	overflow-x: hidden;  /*hides  the stuff that goes outside the div, up and down*/ 
+	overflow-y: auto;
+	height: 100vh;
+}
+
+.parallax{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+
+	font-size: 200%;
+
+}
+
+.block{
+	height: 500px;
+	background: #08b;
+}
+
+.base{
+	transform: translateZ(0) ;
+	text-align: center;
+}
+
+.back{
+	transform: translateZ(-1px);
+	background-image: url();
+	text-align: center;
+}
+
+.parallax__group {
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
+}
+
+.titl{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+
+}
+

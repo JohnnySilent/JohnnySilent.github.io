@@ -1,0 +1,255 @@
+/*Mobile*/
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+h1, h2, h3 {
+	padding: 10px;
+}
+
+.clearfix{
+	content: '';
+	display: table;
+	clear: both; 
+}
+
+.header {
+	width: 100%;
+	border: 1px solid black;
+	background: #c6f;
+}
+
+.nav {
+	margin: 0 auto;
+	padding: 0;
+
+}
+
+.links{
+	text-align: center;
+	display: block;
+	padding: 10px;
+	/*border: 1px black dotted;*/
+}
+
+.wrapper{
+	width: 100%;
+	margin: 0 auto;
+	background: azure;
+}
+
+.support{
+	width: 100%;
+}
+
+.logo{
+	width: 200px;
+	height: 100px;
+	border: 1px solid black;
+	/*z-index: 1;
+	position: absolute;*/
+
+}
+
+.feature{
+		height: 250px;
+		background: lightgrey;
+	}
+
+.order{
+	width: 320px;
+	margin: 0 auto;
+}
+
+.delivery{
+	width: 320px;
+	margin: 0 auto;
+}
+
+.occasions{
+	width: 320px;
+	margin: 0 auto;
+}
+
+footer{
+	width: 100%;
+	background: powderblue;
+	text-align: center;
+	padding: 20px;
+}
+
+/*gallery page*/
+
+.gal{
+	border: 1px black solid;
+}
+.gal:after{
+
+}
+
+.prev {
+	float:left;
+	width: 160px;
+	height: 160px;
+	background-image: url("http://i.imgur.com/TExHfr6b.png?1");
+}
+
+/*ABOUT*/
+.info {
+	margin: 0 auto;
+	width: 100%;
+	border: black 1px solid;
+}
+
+.sect1 {
+	background: powderblue;
+}
+.sect2 {
+	background: powderblue;
+}
+
+/*Tablet*/
+@media (min-width: 760px) {
+	.wrapper {
+		width: 760px; 
+		margin: 0 auto; 
+	}
+
+	.header{
+		
+	}
+
+	.header:after {
+		content: '';
+		display: table;
+		clear: both; 
+	}
+
+	.nav{
+		margin: 0;
+		float: right;
+	}
+
+	.links{
+		/*float: right;*/
+		display: inline-block;
+		margin-right: 20px;
+		padding: 10px 30px;
+		
+	}
+
+	.links a{
+		text-decoration: none;
+		font-size: 20px;
+	}
+
+	.feature{
+		height: 450px;
+		background: lightgrey;
+	}
+
+	.order{
+		
+		width: 760px;
+		background: tomato;
+	}
+
+	.order:after{
+		content: '';
+		display: table;
+		clear: both; 
+	}
+	.delivery {
+		width: 760px;
+		background: tomato;
+		
+	}
+	.delivery:after{
+		content: '';
+		display: table;
+		clear: both; 
+	}
+	.occasions {
+		width: 760px;
+		background: tomato;
+	}
+	.occasions:after{
+		content: '';
+		display: table;
+		clear: both; 
+	}
+	img{
+		float: right;
+	}
+
+	.prev {
+		float: left;
+		width: 320px;
+		height: 320px;
+		background-image: url("http://i.imgur.com/TExHfr6m.png?1");
+	}
+
+	.sect1{
+	
+		width: 320px;
+		float: left;
+	}
+
+	.sect2 {
+
+		width: 320px;
+		float: left;
+	}
+}
+
+/*Desktop*/
+@media (min-width: 1000px){
+	.wrapper{
+		width: 1000px;
+		margin: 0 auto;
+	}
+
+	h3{
+		border: 1px solid black;
+	}
+
+
+	.support{
+		width: 992px;
+		margin: 0 auto;
+		border: 1px solid black;
+		float: none;
+	}
+
+	.support:after{
+		content: '';
+		display: table;
+		clear: both; 
+	}
+
+
+	.order{
+		float: left;
+		height: 420px;
+		width: 320px;
+		background: tomato;
+		margin: 0 5px;
+	}
+	.delivery {
+		margin: 0 5px;
+		float: left;
+		height: 420px;
+		width: 320px;
+		background: tomato;
+		
+	}
+	.occasions {
+		margin: 0 5px;
+		float:left;
+		height: 420px;
+		width: 320px;
+		background: tomato;
+	}
+}
