@@ -1,8 +1,6 @@
-// Rock, Paper, Scissors game
+// -------Rock, Paper, Scissors game----------
 
-
-
-// var userChoice = prompt("Do you choose rock, paper or scissors?");
+var userChoice //= prompt("Do you choose rock, paper or scissors?");
 var computerChoice = Math.random();
 
 if (computerChoice < 0.34) {
@@ -45,7 +43,7 @@ var compare = function(choice1, choice2){
 var res = compare(userChoice, computerChoice);
 //console.log(res);
 
-//Cash register
+//--------Cash register------------
 function StaffMember(name,discountPercent){
     this.name = name;
     this.discountPercent = discountPercent;
@@ -91,6 +89,8 @@ cashRegister.applyStaffDiscount(me);
 // Show the total bill
 console.log('Your bill is '+cashRegister.total.toFixed(2));
 
+
+//------------BUTTON--------------
 var x = document.getElementById("myBtn");
 x.addEventListener("mouseover", myFunction);
 x.addEventListener("click", mySecondFunction);
