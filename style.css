@@ -134,8 +134,7 @@ h5{
 }
 
 .projects li{
-	width: 250px;
-	height: 250px;
+	width: 400px;
 	padding: 10px;
 }
 
@@ -217,10 +216,16 @@ h5{
 	}
 
 	.support{
-		height: 800px;
 		width: 100%;
 		margin: auto;
 		margin-bottom: 20px;
+	}
+
+	.support:after{
+			clear: both;
+		    display: table;
+		    content: '';
+
 	}
 
 	.support img{
