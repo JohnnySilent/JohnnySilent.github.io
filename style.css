@@ -125,26 +125,38 @@ h5{
 	border: 2px solid #9cf;
 }
 
+/* * * * Works * * * */
 .projects{
 	display: flex;
 	flex-direction: column;
-	
 	margin: 0 auto;
 	list-style: none;
 }
 
 .projects li{
 	width: 400px;
-	padding: 10px;
+	margin-bottom: 20px;
+	
+}
+
+.projects a{
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+
+.projects p{
+	color: black;
 }
 
 .prev{
 	display: block;
 	float: left;
+	margin: 0;
 	/*margin-left: 50px;*/
-	margin-right: 50px;
+	/*margin-right: 50px;*/
 }
 
+/* * * * contact * * * */
 .circle{
 	border-radius: 100%;
 	background: red;
@@ -164,7 +176,9 @@ h5{
 	left: 25%;
 }
 
-/* Desktop */
+
+
+/********** Desktop *************/
 @media (min-width: 760px){
 
 
@@ -327,10 +341,20 @@ h5{
 		width: 200px;
 	}
 
+	
+}
+@media (min-width: 1000px){
 	.projects{
-		width: 800px;
+		width: 960px;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 	}
+
+	.projects li{
+		margin-right: 50px;
+
+	}
+
+
 }
