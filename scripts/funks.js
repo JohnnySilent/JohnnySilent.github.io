@@ -1,7 +1,15 @@
+// ----------Jquery test----------
 $(document).ready(function(){
-	// $('.footer').hide();
+	//$('.footer').hide();
 });
 
+// $(document).ready(function(){
+//     $('.pull-me').click(function(){
+//             $('.panel').slideToggle('slow');
+//     });
+// });
+
+// --------basic Math?-------
 function numbers() {
 	var num = 0;
 	var a = 5;
@@ -18,6 +26,8 @@ function talk() {
 var pushy = {
 	color: "blue"
 }
+
+// -----------FizzBuzz test--------
 function FizzBuzz() {
 	for (var i = 0; i >= 20; i++){
 		if ((i % 3) === 0 && (i % 5) === 0){

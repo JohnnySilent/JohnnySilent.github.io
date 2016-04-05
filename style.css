@@ -145,8 +145,24 @@ h5{
 	margin-right: 50px;
 }
 
+.circle{
+	border-radius: 100%;
+	background: red;
+	width: 200px;
+	height: 200px;
+	text-align: center;
+	float: left;
+}
 
-
+.smallcir{
+	border-radius: 100%;
+	background: blue;
+	width: 100px;
+	height: 100px;
+	position: relative;
+	top: 25%;
+	left: 25%;
+}
 
 /* Desktop */
 @media (min-width: 760px){
