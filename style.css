@@ -76,7 +76,7 @@ h5{
 #MainCon{
 	background-image: url("http://i.imgur.com/L0E8ZmM.png");
 	/*background-attachment: fixed;*/
-	transform: translateZ(-1px) scale(1);
+	/*transform: translateZ(-1px) scale(1);*/
 }
 
 #MainCon p{
@@ -229,8 +229,6 @@ h5{
 	.info{
 		height: 500px;
 		width: 100%;
-		background-color: rgba(0,0,0,.5);
-		color: black;
 		border: 3px solid #b3b3b3;
 		
 	
