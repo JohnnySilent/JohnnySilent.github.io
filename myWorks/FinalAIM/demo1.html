@@ -14,30 +14,28 @@
 
 <style type="text/css" media="screen">
 
-body { 
-    background-color: #666766; }
+	body { 
+		background-color: #666766;}
 
-p { text-decoration: none;
-	font: 15px verdana, sans-serif;
-	padding: 0 20px 0 20px; }
-	
-p a:link, p a:visited {
-	text-decoration: none;
-	color: white; }
-	
-p a:active, p a:hover {
-	color: blue;
-	text-decoration: underline; }
-	
-	h2{
-		text-align: center;
-		color:#009;
+	p { 
+		text-decoration: none;
+		font: 15px verdana, sans-serif;
+		padding: 0 20px 0 20px; 
 		}
 	
-	header {
+	p a:link, p a:visited {
+		text-decoration: none;
+		color: white; }
+	
+	p a:active, p a:hover {
+		color: blue;
+		text-decoration: underline; }
+	
+	header {	
 		margin: 0 auto;
 		width: 1000px;
 		height: 80px;
+		background-color: #142839;
 	}
 	
 	ul {
@@ -58,36 +56,19 @@ p a:active, p a:hover {
 		margin: 0 auto;
 	}
 	
-#centerer {
-    margin: 0 auto; 
-    width: 1000px;
-	height: 750px;
-	background-image:url('images/night.jpg');
-	background-repeat: no-repeat;}
-	
+	#centerer {
+		margin: 0px auto; 
+		width: 1000px;
+		height: 750px;
+		background-image:url('images/weather.jpeg');
+		background-repeat: no-repeat;
+		}
+		
 	#imf {
+	
 		position: absolute;
 		top: 840px;
-	
-	}
-	
-	#textbox {
-		position: relative;
-		top: 100px;
-		margin: 0 auto;
-		height: 60px;
-		width: 500px;
-		border: #09f outset 3px;
-		overflow: hidden;
 		
-		background-color: #999;
-		opacity: .75;
-		transition: width 2s, height 2s, padding 2s ;
-	}
-	
-	#textbox:hover {
-		width: 500px;
-		height: 400px;
 	
 	}
 	
@@ -95,17 +76,74 @@ p a:active, p a:hover {
 		background-color: #142839;
 		width: 1000px;
 		height: 100px;
+		border: 1px;
 		margin: 0 auto;
+	}
+	
+	#textbox {
+		position: relative;
+		top: 100px;
+		margin: 0 auto;
+		height: 20px;
+		width: 20px;
+		border: #09f outset 3px;
+		padding: 5px;
+		background-color: #999;
+		overflow: hidden;
+		opacity: .2;
+		transition: width .5s, height .5s, padding .5s, opacity .5s ;
+	}
+	
+	#textbox:hover {
+		width: 500px;
+		height: 400px;
+		padding: 10px;
+		opacity: .5;
+	}
+	
+	#box {
+		width: 150px;
+		height: 100px;
+		background-color: #999;
+		margin: 0 20px 0 0;
+		float: right;
+		color: #999;
+		opacity: .5;
+		border: #09f outset 2px;
+		transition: width 2s, height 2s, color 2s, opacity 3s;
+	}
+	
+	#box:hover {
+		width: 160px;
+		height: 110px;
+		color: red;
+		opacity: .75;
+	}
+	
+	#temp {
+		width: 5px;
+		height: 300px;
+		margin: 0 0 0 10px;
+		background-color: #09f;
+		float: left;
+	}
+	
+	#left {
+		
+	}
+	
+	#right {
+	
 	}
 	
 </style>
 	
 </head>
 <body>
-
 <header>
 <a href = "index.html"><img src = "images/head.png"></a>
 </header>
+
 
 <nav>
 		<ul>
@@ -132,28 +170,29 @@ p a:active, p a:hover {
 		</ul> 
 	</nav>
 	
-	<div id = "centerer">
+<div id="centerer">
 	<img src = "images/top.png">
-		<div id = "textbox">
-			<h2> Features </h2>
-			<hr>
-			
-			<p> Advanced navigational functions to keep you from ever getting lost, weather on foot, on the roar, or miles above.<p>
-			<p> Scan objects, and lifeforms to pull information from our meticulously crafted and rapidly growing database</p>
-			<p> Displays clear information about your surroundings right in front of your eyes without obscuring your sight.</p>
-			<p> Unbelieveable power inside of an extremely small package.</p>
-			<br>
-			<p>* This OmniSight is not your desktop computer.</p>
+		<div id ="box">
+			<img src ="images/weth.png">
 		</div>
+		<div id ="temp">
+			<p></p>
+		</div>
+		
+		<div id ="textbox">
+			<p>testting</p>
+		</div>
+		
 	<img id ="imf" src = "images/bottom.png">
-	
-	
 </div>
+
+
+
 <div id = "bottom">
 <p>
 <a href="index.html">Home</a> | <a href="features.html">Features</a> | <a href="models.html">Models</a> | <a href="about.html">About</a> | <a href="demo1.html">Demo</a>
 </p>
 <p>Copyright 2014 OmniSight. DoubleU, Inc. All Rights Reserved</p>
-	</div>
+</div>
 </body>
 </html>
