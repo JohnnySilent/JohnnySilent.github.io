@@ -1,0 +1,102 @@
+
+.nav{
+	background-color: silver;
+	height: 40px;
+	width: 1000px;
+	font-family: Verdana;
+	text-align: center;
+	margin: auto;
+}
+
+.nav li{
+	padding: 20px;
+	display: inline;
+}
+
+.bigscreen{
+	height: 400px;
+	width: 1000px;
+	margin: auto;
+	background-image: url(http://i.imgur.com/7sVFhxq.png?1);
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-position: center;
+	background-color: floralwhite;
+}
+
+.bigscreen h1{
+	text-align: center;
+	color: black;
+}
+
+#info {
+	color: black;
+	margin-left: 10px;
+	font-family: Arial;
+}
+.support {
+	height: 500px;
+	width: 1000px;
+	background-color: azure;
+	margin: auto;
+}
+
+#left{
+	float: right;
+	width: 800px;
+}
+
+.box1 img{
+	float: left;
+}
+
+.box1 {
+	height: 150px;
+	background-color: blue;
+	border-radius: 10px;
+	color: white;
+	margin-left: 10px;
+	margin-bottom: 5px;
+	text-align: center;
+	padding: 25px 25px;
+}
+
+.box2{
+	height: 150px;
+	border-radius: 10px;
+	background-color: blue;
+	color: white;
+	margin-left: 10px;
+	margin-bottom: 5px;
+	text-align: center;
+	padding-top: 50px;
+}
+
+.box3{
+	height: 405px;
+	width: 200px;
+	float: left;
+	background-color: pink;
+	display: inline-block;
+	border-radius: 10px;
+}
+
+#footer{
+	height: 100px;
+	background-color: green;
+	clear: both;
+	border-radius: 10px;
+}
+#image{
+	height: 150px;
+	width: 150px;
+	float: left;
+	background-color: black;
+	background-image: url(http://www.nanowerk.com/nanotechnology/introduction/image17.jpg)
+
+}
+#image:hover{
+	
+	background-image: url(http://fc08.deviantart.net/fs70/i/2011/115/7/f/pospa__s_firefox_icon_by_tuurba-d3ewgax.png)
+}
+
