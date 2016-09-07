@@ -11,7 +11,7 @@ body{
 }
 
 .wrapper{
-	width: 80%;
+	width: 100%;
 	margin: 0 auto;
 	background: lightgrey;
 }
@@ -19,16 +19,16 @@ body{
 .red{
 	background-color: red;
 }
-
+/*********** NAVIGATION *************/
 .top-nav{
 	background: grey;
-	height: 40px;
+	height: 30px;
 	width: 100%;
 }
 
 .logo{
 	background: lightgrey;
-	height: 260px;
+	height: 200px;
 	width: 100%;
 }
 
@@ -41,7 +41,7 @@ h1{
 
 .bottom-nav{
 	background: grey;
-	height: 40px;
+	height: 30px;
 	width: 100%;
 }
 
@@ -51,6 +51,7 @@ h1{
 	width: 1000px;
 }
 
+
 .links{
 	display: inline-flex;
 	margin-left: 20px; 
@@ -58,6 +59,9 @@ h1{
 	font-weight: bold;
 	font-size: 2rem;
 }
+
+/********* THE REST **********/
+
 
 .main{
 	width: 100%;
@@ -121,6 +125,115 @@ footer{
 		max-width: 860px;
 		margin: 0 auto;
 		background: lightgrey;
+	}
+
+	.line{
+		height: 20px;
+		border-top: 3px solid black;
+		border-bottom: 3px solid black;
+		width: 40%; 
+		max-width: 60%;
+		margin: 0 auto;
+		display: inline-block;
+	}
+
+	.top-nav{
+		background: grey;
+		height: 30px;
+		width: 100%;
+	}
+
+	.logo{
+		background: lightgrey;
+		height: 200px;
+		width: 100%;
+	}
+
+	h1{
+		position: relative;
+		top: 30%;
+		margin: 0;
+		font-size: 8rem;
+	}
+
+	.bottom-nav{
+		background: grey;
+		height: 30px;
+		width: 100%;
+	}
+
+	.navi-bar{
+		padding-top: 6px;
+		margin: 0 auto;
+		width: 1000px;
+	}
+
+
+	.links{
+		display: inline-flex;
+		margin-left: 20px; 
+		margin-right: 20px;
+		font-weight: bold;
+		font-size: 2rem;
+	}
+
+	/********* THE REST **********/
+
+
+	.main{
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	section{
+		padding: 20px 50px;
+	}
+
+	.line-up{
+		display: flex;
+		flex-direction: row;
+		margin: 0 auto;
+		width: 90%;
+	}
+
+	.thumb{
+		width: 100px;
+		height: 140px;
+		margin: 0 auto;
+		border: solid black 2px;
+	}
+
+	.preview{
+		width: 500px;
+		height: 160px;
+		margin: 0 auto;
+		border: solid black 2px;
+
+	}
+
+	.preview h3{
+		margin-left: 10px;
+	}
+
+	.comic-pic{
+		width: 120px;
+		height: 160px;
+		float: left;
+		border: 1px dotted black;
+		margin-right: 10px;
+	}
+
+	.featured{
+		width: 350px;
+		height: 350px;
+		margin: 0 auto;
+		border: solid black 2px;
+	}
+
+	footer{
+		height: 50px;
+		width: 100%;
+		background-color: grey;
 	}
 }
 

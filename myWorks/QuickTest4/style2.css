@@ -1,0 +1,186 @@
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	background: #FFF;
+}
+
+h1,h2,h3,h4,h5{
+	margin: 0;
+}
+
+.wrapper{
+	max-width: 1000px;
+}
+
+/************ Header ************/
+header{
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+.top-nav{
+	background: #222;
+	height: 50px;
+	max-width: 1140px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.bottom-nav{
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+.facebook{
+	width: 30px;
+	height: 30px;
+	float: right;
+	background: #fff;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+.facebook span{
+	font-size: 24px;
+	margin-left: 9px;
+}
+
+.proto{
+	float: left;
+	height: 50px;
+	margin-left: 20px;
+	font-size: 24px;
+	color: #fff;
+}
+
+.proto p{
+	position: relative;
+	top: 8px;
+}
+
+.sitemap{
+	float: left;
+	height: 50px;
+	margin-left: 20px;
+	font-size: 24px;
+	color: #fff;
+}
+
+.sitemap p{
+	position: relative;
+	top: 8px;
+}
+
+.logo{
+	background: lightgrey;
+	height: 200px;
+	width: 100%;
+}
+
+.logo-small{
+	background: lightgrey;
+	height: 120px;
+	width: 100%;
+}
+
+h1{
+	position: relative;
+	top: 30%;
+	margin: 0;
+	font-size: 8rem;
+}
+
+/************* Headers Ends ************/
+
+.latest{
+	border: 2px solid #ce99ff;
+	background: #e6ccff;
+	margin-bottom: 20px;
+}
+
+.hottest{
+	margin-bottom: 20px;
+}
+
+.photoday{
+	margin-bottom: 20px;
+}
+
+.news{
+	margin-bottom: 20px;
+}
+
+.line-up{
+	display: flex;
+	flex-direction: row;
+	margin: 0 auto;
+	width: 90%;
+}
+
+.thumb{
+	width: 200px;
+	height: 250px;
+	margin: 0 auto;
+	border: solid black 2px;
+}
+
+.left{
+	float: left;
+}
+
+.featured{
+	width: 350px;
+	height: 350px;
+	margin: 0 auto;
+	border: solid black 2px;
+}
+
+.abt-heading{
+	border-bottom: 2px solid black;
+}
+
+.profile{
+	height: 100px;
+	width: 100px;
+	float: left;
+	border: 2px solid black;
+}
+
+.studio-prev{
+	height: 260px;
+	width: 100%;
+	border: 1px solid blue;
+}
+
+.studio-pic{
+	height: 200px;
+	width: 360px;
+	background: grey;
+	border: 2px solid black;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-right: 10px;
+	float: left;
+}
+
+footer{
+	margin: 0 auto;
+	height: 100px;
+	width: 100%;
+	max-width: 1140px;
+	background-color: #222;
+}
+
+@media(min-width: 760px){
+
+}
+
+@media(min-width: 1000px){
+	
+}
