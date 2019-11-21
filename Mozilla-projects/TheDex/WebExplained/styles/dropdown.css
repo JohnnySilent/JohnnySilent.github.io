@@ -56,7 +56,8 @@ body{			/* Refers to the element 'body' */
 	color: black;
 }
 
-.dropdown{
+.dropdown:hover .dpContent{
+	display: block;
 }
 
 .dpContent{
@@ -71,14 +72,7 @@ body{			/* Refers to the element 'body' */
 	display: block;
 	padding: 4px 10px;
 }
-/*
-.dpContent a:hover{
-	background-color: grey;
-}
-*/
-.dropdown:hover .dpContent{
-	display: block;
-}
+
 
 
 
