@@ -158,6 +158,7 @@ header nav ul a {
 }
 .about__intro {
   line-height: 1.5;
+  text-align: center;
 }
 .about__intro span {
   background: var(--primary-color);
@@ -166,9 +167,10 @@ header nav ul a {
   padding: 0 10px;
 }
 .about__pic {
-  overflow: hidden;
   border-radius: 50%;
+  overflow: hidden;
   filter: saturate(0.5);
+  max-width: 500px;
 }
 .about img {
   margin: 0 auto;
@@ -209,6 +211,15 @@ header nav ul a {
   background-color: #e1eae9;
 }
 
+@media (max-width: 720px) {
+  nav,
+  .contact {
+    display: none;
+  }
+  .mobile-nav {
+    display: block;
+  }
+}
 @media (min-width: 1024px) {
   .about__inner {
     display: flex;
