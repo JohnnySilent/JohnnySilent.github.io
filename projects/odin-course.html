@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dynamic Confirmation Form</title>
+</head>
+<body>
+
+<h2>Select an Option</h2>
+
+<form id="myForm">
+  <div>
+    <input type="radio" id="option1" name="selection" value="https://gamefaqs.gamespot.com/">
+    <label for="option1">Option 1</label>
+  </div>
+  <div>
+    <input type="radio" id="option2" name="selection" value="https://www.youtube.com/">
+    <label for="option2">Option 2</label>
+  </div>
+  <div>
+    <input type="radio" id="option3" name="selection" value="https://www.patreon.com/c/LastStandMedia/posts">
+    <label for="option3">Option 3</label>
+  </div>
+  <br>
+  <button type="submit">Submit</button>
+
+  <div>
+    <p>
+        <p>Here's how this code works:</p>
+
+<p>
+    HTML Structure:
+    <br>
+    We create a simple form (<form id="myForm">).
+    Inside the form, we have three radio buttons. Each radio button has:
+    type="radio": Identifies them as part of a radio button group.
+    name="selection": Ensures that only one radio button in this group can be selected at a time.
+    value="pageX.html": This is the crucial part! The value of each radio button is set to the URL of the corresponding confirmation page (e.g., page1.html, page2.html, page3.html).
+    id and label: For accessibility, linking the label to the input.
+    A submit button (<button type="submit">).
+</p>
+<p>
+    JavaScript Logic:
+    
+    We attach an event listener to the form's submit event.
+    event.preventDefault();: This line stops the default form submission behavior, which would typically cause the browser to try and submit the form data in a standard way (which we don't want here).
+    document.querySelector('input[name="selection"]:checked');: This line selects the currently checked radio button within the "selection" group.
+    Conditional Redirection:
+    if (selectedOption): We check if any radio button has been selected.
+    const confirmationPage = selectedOption.value;: If an option is selected, we retrieve its value (which is the URL of the confirmation page).
+    window.location.href = confirmationPage;: This line performs the redirection to the dynamically determined confirmation page.
+    else { alert("Please select an option before submitting."); }: If no option is selected, we display an alert to the user.
+    To make this code work, you'll need to create the following HTML files in the same directory as your main form:
+    
+    page1.html (Your first confirmation page)
+    page2.html (Your second confirmation page)
+    page3.html (Your third confirmation page)
+    These files can contain whatever content you want to display to the user after they make their selection.
+    
+    Feel free to adapt the number of radio buttons and the corresponding confirmation page URLs to fit your specific needs! Let me know if you have any other questions.
+</p>
+
+
+    </p>
+  </div>
+</form>
+
+<script>
+  document.getElementById("myForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    const selectedOption = document.querySelector('input[name="selection"]:checked');
+
+    if (selectedOption) {
+      const confirmationPage = selectedOption.value;
+      window.location.href = confirmationPage; // Redirect to the selected page
+    } else {
+      alert("Please select an option before submitting.");
+    }
+  });
+</script>
+
+</body>
+</html>
